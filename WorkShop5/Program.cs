@@ -20,6 +20,7 @@
 
             // Print remaining balance
             Console.WriteLine("Remaining Balance: " + account.Balance);
+            Console.WriteLine();
 
             // Task 2
 
@@ -50,6 +51,8 @@
                 vehicle.Stop();
             }
 
+            Console.WriteLine();
+
             // Task 3
 
             Printer printer = new Printer();
@@ -73,6 +76,28 @@
             englishTeacher.SalaryInfo();
 
             Console.WriteLine();
+
+            // Task 4
+
+            // Create objects of both derived classes
+            Cars Car = new Cars();
+            Bike myBike = new Bike();
+
+            // Test Car object
+            Console.WriteLine("Testing Car");
+            Car.Display();  // Calls concrete method from base class
+            Car.StartEngine();  // Calls overridden method
+            Car.StopEngine();  // Calls overridden method
+
+            Console.WriteLine();
+
+            // Test Bike object
+            Console.WriteLine("Testing Bike ");
+            myBike.Display();   // Calls concrete method from base class
+            myBike.StartEngine(); // Calls overridden method
+            myBike.StopEngine();  // Calls overridden method
+
+            Console.WriteLine("");
 
         }
     }
