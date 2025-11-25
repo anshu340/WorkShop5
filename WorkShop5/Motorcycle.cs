@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WorkShop5
 {
-    class Motorcycle : Vehicle
+    internal class Motorcycle : Vehicle
     {
         // Unique field for Motorcycle
         public bool HasSidecar { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WorkShop5
 {
-    class Car : Vehicle
+    internal class Car : Vehicle
     {
         // Unique field for Car
         public int Seats { get; set; }

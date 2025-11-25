@@ -58,8 +58,21 @@
             printer.Print(123);
             printer.Print("Repeat Message", 3);
 
-            Console.ReadLine();
 
+            NepaliTeacher nepaliTeacher = new NepaliTeacher();
+            nepaliTeacher.Name = "Anshu Karki";
+            Console.WriteLine("Name: " + nepaliTeacher.Name);
+            nepaliTeacher.Teaching();
+            nepaliTeacher.SalaryInfo();
+            Console.WriteLine();
+
+            EnglishTeacher englishTeacher = new EnglishTeacher();
+            englishTeacher.Name = "Abishek Karki";
+            Console.WriteLine("Name: " + englishTeacher.Name);
+            englishTeacher.Teaching();  // Uses base class method
+            englishTeacher.SalaryInfo();
+
+            Console.WriteLine();
 
         }
     }
