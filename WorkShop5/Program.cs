@@ -128,8 +128,6 @@
 
             // Show updated inventory
             store.ShowAllDeviceDetails();
-
-            Console.WriteLine("");
         }
     }
 }
