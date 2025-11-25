@@ -101,8 +101,33 @@
 
             // Task 5
 
+            Console.WriteLine("ELECTRONICS STORE MANAGEMENT SYSTEM ");
 
+            // Create an ElectronicsStore object
+            ElectronicsStore store = new ElectronicsStore();
 
+            // Create Laptop and Smartphone objects with brand and price
+            Laptop laptop1 = new Laptop("Dell", 1200.99);
+            Laptop laptop2 = new Laptop("HP", 999.50);
+            Smartphone smartphone1 = new Smartphone("Apple", 1099.00);
+            Smartphone smartphone2 = new Smartphone("Samsung", 899.99);
+
+            // Add them to the store
+            Console.WriteLine("Adding Devices to Store");
+            store.AddDevice(laptop1);
+            store.AddDevice(smartphone1);
+            store.AddDevice(laptop2);
+            store.AddDevice(smartphone2);
+
+            // Call ShowAllDeviceDetails() to display info and child-specific behavior
+            store.ShowAllDeviceDetails();
+
+            // Demonstrate RemoveDevice
+            Console.WriteLine("\nRemoving a Device");
+            store.RemoveDevice(laptop2);
+
+            // Show updated inventory
+            store.ShowAllDeviceDetails();
 
             Console.WriteLine("");
         }

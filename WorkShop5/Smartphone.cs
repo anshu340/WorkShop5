@@ -22,7 +22,7 @@ namespace WorkShop5
         // Override the abstract method
         public override void ShowInfo()
         {
-            Console.WriteLine("=== Smartphone Details ===");
+            Console.WriteLine("Smartphone Details");
             Console.WriteLine($"Brand: {Brand}");
             Console.WriteLine($"Price: ${Price}");
         }
