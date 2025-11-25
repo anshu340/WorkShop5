@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WorkShop5
 {
-    // Abstract Class: ElectronicDevice
+    // Abstract Class ElectronicDevice
     abstract class ElectronicDevice
     {
         // Private fields
